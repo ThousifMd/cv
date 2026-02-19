@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohammed Saalim K - Portfolio & Resume</title>
 
     <link type="text/css" rel="stylesheet" href="/localsite/css/base.css" id="/localsite/css/base.css" />
@@ -602,12 +602,20 @@
                 }
             }
 
-            // Initialize filters (only when Resume tab is active)
+            // Initialize filters
             CVFilters.init({
                 personFolder: 'MohammedSaalim',
                 defaultJson: 'detailed.json',
                 defaultTheme: 'elegant'
             });
+
+            // Auto-switch to Resume tab when URL has ?resume= param
+            // Using a timeout to ensure initial loading is complete
+            setTimeout(function() {
+              w URParams(location.search).has('resume')) {
+                    showTab('resume');
+                }
+            }, 100);
         </script>
 
 </body>
