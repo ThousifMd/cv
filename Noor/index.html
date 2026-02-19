@@ -39,7 +39,47 @@
     .row {
       display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
     }
+    .pdf-loading {
+      background: #fff3cd;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 10px 0;
+      font-size: 13px;
+    }
+    .pdf-error {
+      background: #f8d7da;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 10px 0;
+      font-size: 13px;
+      color: #721c24;
+    }
+    .pdf-success {
+      background: #d4edda;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 10px 0;
+      font-size: 13px;
+      color: #155724;
+    }
   </style>
+
+  <!-- PDF.js Library -->
+  <script type="module">
+    // Import pdf.mjs from SatvikPraveen's vendor folder
+    import * as pdfModule from "../SatvikPraveen/vendor/pdf.mjs";
+    window.pdfjsLib = pdfModule;
+    
+    if (window.pdfjsLib && window.pdfjsLib.GlobalWorkerOptions) {
+      window.pdfjsLib.GlobalWorkerOptions.workerSrc = "../SatvikPraveen/vendor/pdf.worker.mjs";
+    }
+    
+    window._pdfModuleReady = true;
+    window.dispatchEvent(new Event("pdfjs-ready"));
+  </script>
+
+  <!-- CVFilters - Modular PDF-to-JSON converter -->
+  <script src="../common/CVFilters.js"></script>
 </head>
 
 <body>
@@ -97,6 +137,14 @@
     const dataPreview  = $("#dataPreview");
     const statusBox    = $("#dataStatus");
 
+    let currentResumeData = null;
+    let pdfJsonData = null;
+
+    // CVFilters configuration - Set your PDF URL here
+    const CVFiltersConfig = {
+      pdfUrl: "" // Set your PDF URL here, e.g., "https://example.com/resume.pdf"
+    };
+
     function getParam(k, fallback) {
       return new URLSearchParams(location.search).get(k) ?? fallback;
     }
@@ -118,7 +166,27 @@
       } catch (err) {
         console.error(err);
         dataPreview.textContent = `⚠️ Failed to load ${file}`;
+        return null;
       }
+    }
+
+    function loadThemeFromData(data, theme) {
+      // Create a data URL with the JSON data
+      const jsonString = JSON.stringify(data);
+      const dataUrl = `data:application/json;charset=utf-8,${encodeURIComponent(jsonString)}`;
+      
+      const url = `../common/theme.html?resume=${encodeURIComponent(dataUrl)}&theme=${encodeURIComponent(theme)}`;
+      const start = performance.now();
+
+      previewFrame.onload = () => {
+        const ms = (performance.now() - start).toFixed(1);
+        statusBox.textContent = `Theme "${theme}" loaded in ${ms} ms`;
+        if (data && data.basics && data.basics.name) {
+          statusBox.textContent += ` • Name: ${data.basics.name}`;
+        }
+      };
+
+      previewFrame.src = url;
     }
 
     function loadTheme(jsonFile, theme) {
@@ -134,8 +202,17 @@
     }
 
     async function loadAll(jsonFile, theme) {
-      await loadJson(jsonFile);
-      loadTheme(jsonFile, theme);
+      const json = await loadJson(jsonFile);
+      if (json) {
+        currentResumeData = json;
+        loadTheme(jsonFile, theme);
+      }
+    }
+
+    async function loadAllFromData(data, theme) {
+      currentResumeData = data;
+      dataPreview.textContent = JSON.stringify(data, null, 2);
+      loadThemeFromData(data, theme);
     }
 
     async function loadReadme() {
@@ -151,30 +228,81 @@
       }
     }
 
-    function init() {
-      const jsonFile = getParam("resume", "detailed.json");
-      const theme    = getParam("theme",  "elegant");
+    async function loadPdfResume() {
+      if (!CVFiltersConfig.pdfUrl) {
+        // No PDF URL configured, use fallback JSON
+        return null;
+      }
 
-      jsonSelect.value  = jsonFile;
-      themeSelect.value = theme;
+      const statusDiv = document.createElement("div");
+      statusDiv.className = "pdf-loading";
+      statusDiv.textContent = "📄 Loading PDF resume from external URL...";
+      statusBox.parentElement.insertBefore(statusDiv, statusBox);
 
-      setParam({ resume: jsonFile, theme });
-      loadAll(jsonFile, theme);
-      loadReadme();
+      try {
+        const jsonData = await CVFilters.init({
+          pdfUrl: CVFiltersConfig.pdfUrl,
+          onSuccess: (data) => {
+            statusDiv.className = "pdf-success";
+            statusDiv.textContent = `✅ PDF loaded successfully! Name: ${data.basics.name || "Resume"}`;
+            pdfJsonData = data;
+          },
+          onError: (error) => {
+            statusDiv.className = "pdf-error";
+            statusDiv.textContent = `❌ Failed to load PDF: ${error.message}`;
+          }
+        });
+
+        return jsonData;
+      } catch (error) {
+        statusDiv.className = "pdf-error";
+        statusDiv.textContent = `❌ Error: ${error.message}`;
+        return null;
+      }
     }
 
-    jsonSelect.addEventListener("change", () => {
+    async function init() {
+      await loadReadme();
+
+      // Try to load PDF resume first
+      const pdfData = await loadPdfResume();
+      
+      if (pdfData) {
+        // Use PDF data
+        const theme = getParam("theme", "elegant");
+        themeSelect.value = theme;
+        setParam({ theme });
+        await loadAllFromData(pdfData, theme);
+      } else {
+        // Fallback to JSON file
+        const jsonFile = getParam("resume", "detailed.json");
+        const theme    = getParam("theme",  "elegant");
+
+        jsonSelect.value  = jsonFile;
+        themeSelect.value = theme;
+
+        setParam({ resume: jsonFile, theme });
+        await loadAll(jsonFile, theme);
+      }
+    }
+
+    jsonSelect.addEventListener("change", async () => {
       const jsonFile = jsonSelect.value;
       const theme    = themeSelect.value;
       setParam({ resume: jsonFile, theme });
-      loadAll(jsonFile, theme);
+      await loadAll(jsonFile, theme);
     });
 
     themeSelect.addEventListener("change", () => {
-      const jsonFile = jsonSelect.value;
-      const theme    = themeSelect.value;
-      setParam({ resume: jsonFile, theme });
-      loadAll(jsonFile, theme);
+      const theme = themeSelect.value;
+      setParam({ theme });
+      
+      if (pdfJsonData) {
+        loadThemeFromData(pdfJsonData, theme);
+      } else {
+        const jsonFile = jsonSelect.value;
+        loadTheme(jsonFile, theme);
+      }
     });
 
     init();
