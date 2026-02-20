@@ -141,8 +141,9 @@
     let pdfJsonData = null;
 
     // CVFilters configuration - Set your PDF URL here
+    // Use local file: "./Noor_Res.pdf" or external URL: "https://example.com/resume.pdf"
     const CVFiltersConfig = {
-      pdfUrl: "" // Set your PDF URL here, e.g., "https://example.com/resume.pdf"
+      pdfUrl: "./Noor_Res.pdf" // Using local PDF file in Noor folder
     };
 
     function getParam(k, fallback) {
@@ -159,13 +160,28 @@
 
     async function loadJson(file) {
       try {
-        const res = await fetch(file, { cache: "no-store" });
+        // If relative path, resolve from current page location
+        let resolvedFile = file;
+        if (file.startsWith("./") || (!file.startsWith("http") && !file.startsWith("/") && !file.startsWith("../"))) {
+          // Resolve relative to current page (Noor/index.html)
+          resolvedFile = new URL(file, window.location.href).href;
+        } else if (!file.startsWith("http") && !file.startsWith("data:")) {
+          // Relative path - fetch from current directory
+          resolvedFile = file;
+        }
+        
+        console.log("[loadJson] Loading:", file, "→", resolvedFile);
+        const res = await fetch(resolvedFile, { cache: "no-store" });
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+        }
         const json = await res.json();
+        console.log("[loadJson] Loaded JSON, name:", json.basics?.name);
         dataPreview.textContent = JSON.stringify(json, null, 2);
         return json;
       } catch (err) {
-        console.error(err);
-        dataPreview.textContent = `⚠️ Failed to load ${file}`;
+        console.error("[loadJson] Error loading", file, ":", err);
+        dataPreview.textContent = `⚠️ Failed to load ${file}: ${err.message}`;
         return null;
       }
     }
@@ -231,30 +247,44 @@
     async function loadPdfResume() {
       if (!CVFiltersConfig.pdfUrl) {
         // No PDF URL configured, use fallback JSON
+        console.log("[CVFilters] No PDF URL configured, using fallback");
         return null;
       }
 
       const statusDiv = document.createElement("div");
+      statusDiv.id = "pdfStatusDiv";
       statusDiv.className = "pdf-loading";
-      statusDiv.textContent = "📄 Loading PDF resume from external URL...";
+      statusDiv.textContent = `📄 Loading PDF resume: ${CVFiltersConfig.pdfUrl}...`;
       statusBox.parentElement.insertBefore(statusDiv, statusBox);
 
       try {
+        console.log("[CVFilters] Starting PDF load from:", CVFiltersConfig.pdfUrl);
+        
+        // Wait a bit for PDF.js to be ready
+        await new Promise(resolve => setTimeout(resolve, 100));
+        
         const jsonData = await CVFilters.init({
           pdfUrl: CVFiltersConfig.pdfUrl,
           onSuccess: (data) => {
+            console.log("[CVFilters] PDF loaded successfully:", data);
             statusDiv.className = "pdf-success";
             statusDiv.textContent = `✅ PDF loaded successfully! Name: ${data.basics.name || "Resume"}`;
             pdfJsonData = data;
           },
           onError: (error) => {
+            console.error("[CVFilters] PDF load error:", error);
             statusDiv.className = "pdf-error";
             statusDiv.textContent = `❌ Failed to load PDF: ${error.message}`;
           }
         });
 
+        if (jsonData && jsonData.basics && jsonData.basics.name) {
+          console.log("[CVFilters] PDF parsed successfully, name:", jsonData.basics.name);
+        }
+
         return jsonData;
       } catch (error) {
+        console.error("[CVFilters] Exception during PDF load:", error);
         statusDiv.className = "pdf-error";
         statusDiv.textContent = `❌ Error: ${error.message}`;
         return null;
@@ -264,18 +294,24 @@
     async function init() {
       await loadReadme();
 
-      // Try to load PDF resume first
+      // Wait a moment for PDF.js and CVFilters to be ready
+      await new Promise(resolve => setTimeout(resolve, 500));
+
+      // Try to load PDF resume first (if URL is configured)
       const pdfData = await loadPdfResume();
       
-      if (pdfData) {
+      if (pdfData && pdfData.basics && pdfData.basics.name) {
         // Use PDF data
+        console.log("[Init] Using PDF data, name:", pdfData.basics.name);
         const theme = getParam("theme", "elegant");
         themeSelect.value = theme;
         setParam({ theme });
         await loadAllFromData(pdfData, theme);
       } else {
-        // Fallback to JSON file
-        const jsonFile = getParam("resume", "detailed.json");
+        // Fallback to JSON file - use local detailed.json in Noor folder
+        console.log("[Init] Falling back to JSON file");
+        // Use absolute path from common/ folder perspective: ../Noor/detailed.json
+        const jsonFile = "../Noor/detailed.json"; // Path relative to common/theme.html
         const theme    = getParam("theme",  "elegant");
 
         jsonSelect.value  = jsonFile;

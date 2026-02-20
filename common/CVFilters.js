@@ -281,22 +281,30 @@ const CVFilters = {
       { name: "about", pattern: /(?:^|\n)\s*(?:ABOUT|PROFILE)\s*(?:\n|$)/gi },
     ];
 
+    // Find all section matches first
+    const matches = [];
     for (const { name, pattern } of sectionPatterns) {
+      // Reset regex lastIndex and create a fresh match
+      pattern.lastIndex = 0;
       const match = pattern.exec(text);
       if (match) {
-        const startIndex = match.index + match[0].length;
-        // Find next section or end of text
-        let endIndex = text.length;
-        for (const otherPattern of sectionPatterns) {
-          if (otherPattern.name !== name) {
-            const nextMatch = otherPattern.exec(text.substring(startIndex));
-            if (nextMatch && nextMatch.index < endIndex - startIndex) {
-              endIndex = startIndex + nextMatch.index;
-            }
-          }
-        }
-        sections[name] = text.substring(startIndex, endIndex).trim();
+        matches.push({
+          name,
+          index: match.index,
+          endIndex: match.index + match[0].length,
+        });
       }
+    }
+
+    // Sort matches by position
+    matches.sort((a, b) => a.index - b.index);
+
+    // Extract sections between matches
+    for (let i = 0; i < matches.length; i++) {
+      const match = matches[i];
+      const startIndex = match.endIndex;
+      const endIndex = i < matches.length - 1 ? matches[i + 1].index : text.length;
+      sections[match.name] = text.substring(startIndex, endIndex).trim();
     }
 
     return sections;
