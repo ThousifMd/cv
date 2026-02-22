@@ -15,7 +15,7 @@ Georgia.org Dept of Economic Development – Atlanta, GA
 2015 – Present
 
 Lead Engineer, Full Stack Developer, UX Designer, AI Integration, Data Visualization, Machine Learning, Cognito Forms.
-Developed directories for Georgia Film, Aerospace, Trade, Manufacturing and Recycling. Sharepoint and Salesforce Admin.<!--using jQuery, MapBox and Google Maps.-->
+Developed directories for Georgia Film, Aerospace, Trade, Manufacturing and Recycling. SQL, Sharepoint, Salesforce Admin.<!--using jQuery, MapBox and Google Maps.-->
 
 **Founder and CEO**
 DreamStudio.com – Atlanta, GA
@@ -32,9 +32,9 @@ Neighborhood.org sites for eight neighborhood associations including Midtown, We
 Georgia State Parks and Historic Sites – Atlanta, GA
 2000 to 2015
 
-Designed and hosted state park sites for content and event editing, enews, golf courses and lodge sites.
+Designed and hosted state park web system for collaborative editing, enews, golf courses and lodge sites.
 Campground Host management and background check system using C# and Microsoft .NET.
-Wireless ticketing for excursion trains, programming of calendar system and SQL database admin.
+Wireless ticketing for excursion trains integrating Microsoft point-of-sale with SQL website calendars.
 
 
 **Lead Programmer and Web Designer**
