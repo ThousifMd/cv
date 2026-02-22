@@ -1,27 +1,27 @@
 # Loren Kevin Heyns
 loren@dreamstudio.com | 678-468-1000 | Atlanta, GA
 
-Project Director and Lead Engineer with 25 years experience leading teams and automating customer experiences.
-AI Integration Expert, Full Stack Developer, Data Visualization Designer, Python Machine Learning Analytics,
-Broad experience with Energy, Aerospace, Product Lifecycles & Manufacturing Supply Chains. Vibe Coding Trainer.
+Project Director, Designer and Engineer with 25 years experience organizing teams and building amazing customer experiences.
+AI Integration Expert, Full Stack Developer, Maps and Data Visualization, Python Machine Learning Analytics, Vibe Coding Trainer.
+<!--
+Broad experience with energy sector, aerospace, product lifecycles & manufacturing supply chains. 
+-->
 
----
 
 ## Work Experience
 
-**Developer / Programmer Analyst**
+**Lead Developer / Programmer Analyst**
 Georgia.org Dept of Economic Development – Atlanta, GA
 2015 – Present
 
-Lead Engineer, Full Stack Developer, UX Designer, AI Integration, Data Visualization, Machine Learning.
-Developed directories for Georgia Film, Aerospace, Trade and Recycling using jQuery, MapBox and Google Maps.
+Lead Engineer, Full Stack Developer, UX Designer, AI Integration, Data Visualization, Machine Learning, Cognito Forms.
+Developed directories for Georgia Film, Aerospace, Trade, Manufacturing and Recycling. Sharepoint and Salesforce Admin.<!--using jQuery, MapBox and Google Maps.-->
 
 **Founder and CEO**
 DreamStudio.com – Atlanta, GA
 2000 – Present
 
-Project Director for data science teams combining AI with industry impact supply-chains with product analysis and location comparison tools.
-Arts Engine for video generation, LLM chat interfaces, Python Data Pipelines, Google Data Commons API timelines. Cloudflare and AWS hosting. International trade flow analysis combining Python Colabs, Azure SQL, Tabulator, Chart.js, D3 and Leaflet Maps.
+Project Director for volunteer data science teams combining AI with industry impact supply-chains with product analysis and location comparison tools. Arts Engine for video generation, LLM chat interfaces, Python Data Pipelines, Google Data Commons API timelines. Cloudflare and AWS hosting. International trade flow analysis combining Python Colabs, Azure SQL, Tabulator, Chart.js, D3 and Leaflet Maps.
 
 Developed Content Management Systems for membership management, payments, news and scheduling.
 News and directory services for neighborhood development projects, realtors and foundations.
@@ -32,16 +32,16 @@ Neighborhood.org sites for eight neighborhood associations including Midtown, We
 Georgia State Parks and Historic Sites – Atlanta, GA
 2000 to 2015
 
-Designed and hosted state park sites for team editing, event admin, news, golf courses and lodge sites.
+Designed and hosted state park sites for content and event editing, enews, golf courses and lodge sites.
 Campground Host management and background check system using C# and Microsoft .NET.
 Wireless ticketing for excursion trains, programming of calendar system and SQL database admin.
 
 
-**Lead Programmer and web Designer**
-Interactive Planet, Southern Company – Atlanta, GA
+**Lead Programmer and Web Designer**
+Interactive Planet / Southern Company – Atlanta, GA
 1995 to 2000
 
-Developed content system for Southern Company and seven state affiliates. Home energy apps and news sites. Applications for power companies, banks and restaurants. Olympic websites and Hands On Atlanta volunteer system.
+Developed content system for Southern Company and seven state power companies. Home energy apps and news sites. Applications for telcos, banks and restaurants. Olympic websites and Hands On Atlanta volunteer management and calendar system.
 
 ---
 
@@ -62,8 +62,8 @@ Financial Accounting, Art History, Environmental Economics, C+/Unix, Photography
 
 ## Business Solutions / Platforms
 
-Vibe Coding with Claude and OpenAI Codex, Rust and .NET Partner Admin, LibreOffice,
-Microsoft Azure Postgres SQL, AWS Hosting, SharePoint Intranet Setup, Cloudflare CDN,
+Claude and OpenAI Codex, X.ai API with Rust, MS SQL and .NET Partner Admin, LibreOffice,
+Microsoft Azure Postgres, AWS Hosting, SharePoint Intranet Setup, Cloudflare CDN,
 Google Cloud Platform, GitHub Pages, MailChimp, Mailtrap, ChatGPT API, MS Office/Copilot,
 DNS Management, Google Analytics, SketchUp, Apache eCharts, D3 Data Visualizations,
 Cognito Forms, Wix, Squarespace, Drupal, WordPress, Zapier, Jira, Trello, Basecamp
@@ -77,24 +77,7 @@ C# .NET Core, IIS Admin, Microsoft SQL, Supabase, DuckDB, MariaDB, PostgreSQL, S
 
 ## Generative AI and UX Design Tools
 
-Claude Code CLI, Adobe Premiere, Photoshop, Illustrator, InDesign. Vercel and Langchain interfaces,
-OpenAI Codex, Hugging Face, Voyage AI, Pinecone RAG, OpenWebUI Llama, React API FeedPlayer,
-AI video generation with Runway, Luma Dream Machine, Pika Labs, CapCut, ComfyUI, FloraFauna,
+Chat Interface design for X.ai API, Vercel and Langchain interfaces, Claude Code CLI, 
+OpenAI Codex, Hugging Face, Voyage AI, Pinecone, Adobe Firefly, Photoshop, Illustrator, InDesign,
+AI video generation with X.ai API, Runway, Luma Dream Machine, Pika, CapCut, ComfyUI, FloraFauna,
 AI image generation with Midjourney, Gemini API, Stable Diffusion, Grok, Meta, GetImg and Leonardo
-
----
-
-## Expertise in Outreach and Training Facilitation
-
-Today, learning experiences are increasingly occurring while we work – with a whole new frontier opening as AI tools provided access to instant code creation and implementation. Integrated AI insights, search and data visualizations have created new opportunities for streamlining business processes and providing new forms of instruction where human mentors orchestrate collaboration across teams with shared reporting and integrated collaboration processes.
-
-I specialized in leading teams that provide talent, connections, and innovative solutions to help industries grow, prosper and compete globally through access to clearly maintained resources, coordinated group approaches to problem solving, and well crafted outreach that combines business processes with university and technical college talent at all levels of industry.
-
-Putting people at the center of all solutions, reaching high for previously unobtainable objectives, streamlining processes, and doing it all affordably, in record time, is what motivates me the most.
-
-Let's discuss how I can help your organization achieve groundbreaking innovation/marketing goals.
-
----
-
-**Loren Kevin Heyns**
-loren@dreamstudio.com | 678-468-1000 | Atlanta, GA
