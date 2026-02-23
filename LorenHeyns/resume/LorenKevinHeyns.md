@@ -13,17 +13,17 @@ Georgia.org Dept of Economic Development – Atlanta, GA
 2015 – Present
 Lead Engineer, Full Stack Developer, UX Designer, AI Integration, Data Visualization, Machine Learning, Cognito Forms, Technical Project Manager. Developed directories for Georgia Film, International Trade, Manufacturing, Recycling and Aerospace. SQL Admin, Sharepoint Setup and Design, Salesforce Admin and Integrations.
 
+**Project Director / Lead Engineer**
+Model.earth – Atlanta, GA
+2019 – Present
+Project Director for volunteer data science teams combining AI with industry impact supply-chains for product analysis and location comparison. Arts Engine for video generation, LLM chat interfaces, Python Data Pipelines, RealityStream ML Forecasting, Google Data Commons API timelines and FeedPlayer React video interface. Cloudflare and AWS hosting. International trade flow analysis combining Python Colabs, Azure SQL, Tabulator, Chart.js, D3 and Leaflet Maps.
+
 **Founder and CEO**
 DreamStudio.com – Atlanta, GA
 2000 – Present
 Programmed SQL Content Management System for membership, payments, enews and scheduling.
 Directory and Project Reporting tools for neighborhood development projects, realtors and foundations.
 Neighborhood.org sites for eight neighborhood associations including Midtown, West End and Grant Park.
-
-**Project Director / Lead Engineer**
-Model.earth – Atlanta, GA
-2020 – Present
-Project Director for volunteer data science teams combining AI with industry impact supply-chains for product analysis and location comparison. Arts Engine for video generation, LLM chat interfaces, Python Data Pipelines, RealityStream ML Forecasting, Google Data Commons API timelines and FeedPlayer React video interface. Cloudflare and AWS hosting. International trade flow analysis combining Python Colabs, Azure SQL, Tabulator, Chart.js, D3 and Leaflet Maps.
 
 **State Parks Website Developer**
 Georgia State Parks and Historic Sites – Atlanta, GA
