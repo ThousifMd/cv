@@ -1,8 +1,8 @@
 # Loren Kevin Heyns
 loren@dreamstudio.com | 678-468-1000 | Atlanta, GA
 
-Project Director, Designer and Engineer with 25 years experience organizing teams and building amazing customer experiences.
-AI Integration Expert, Full Stack Developer, Maps and Data Visualizations, Python Machine Learning Analytics, Vibe Coding Trainer.
+Project Director, Designer and Web Engineer with 25 years experience organizing teams and building amazing customer experiences.
+AI Integration Expert, Full Stack Developer, Maps and Data Visualizations, Python Machine Learning Analytics, Vibe Code Trainer.
 
 ---
 
@@ -11,7 +11,7 @@ AI Integration Expert, Full Stack Developer, Maps and Data Visualizations, Pytho
 **Lead Developer / Programmer Analyst**
 Georgia.org Dept of Economic Development – Atlanta, GA
 2015 – Present
-Lead Engineer, Full Stack Developer, UX Designer, AI Integration, Data Visualization, Machine Learning, Cognito Forms. Developed directories for Georgia Film, International Trade, Manufacturing, Recycling and Aerospace. SQL Admin, Sharepoint UX, Salesforce Admin.
+Lead Engineer, Full Stack Developer, UX Designer, AI Integration, Data Visualization, Machine Learning, Cognito Forms, Technical Project Manager. Developed directories for Georgia Film, International Trade, Manufacturing, Recycling and Aerospace. SQL Admin, Sharepoint Setup and Design, Salesforce Admin and Integrations.
 
 **Founder and CEO**
 DreamStudio.com – Atlanta, GA
@@ -25,12 +25,12 @@ Model.earth – Atlanta, GA
 2020 – Present
 Project Director for volunteer data science teams combining AI with industry impact supply-chains for product analysis and location comparison. Arts Engine for video generation, LLM chat interfaces, Python Data Pipelines, RealityStream ML Forecasting, Google Data Commons API timelines and FeedPlayer React video interface. Cloudflare and AWS hosting. International trade flow analysis combining Python Colabs, Azure SQL, Tabulator, Chart.js, D3 and Leaflet Maps.
 
-**Site Parks Website Developer**
+**State Parks Website Developer**
 Georgia State Parks and Historic Sites – Atlanta, GA
 2000 to 2015
 Designed and hosted state park web system for collaborative editing, enews, golf courses and lodge sites.
 Campground Host management and background check system using C# and Microsoft .NET.
-Wireless ticketing for excursion trains integrating Microsoft point-of-sale with SQL website calendars.
+Wireless ticketing for excursion trains integrating Microsoft point-of-sale with online availability.
 
 **Lead Programmer and Web Designer**
 Interactive Planet / Southern Company – Atlanta, GA
@@ -58,11 +58,11 @@ Financial Accounting, Art History, Environmental Economics, Programmming, Photog
 
 ### Business Solutions / Platforms
 
-Claude and OpenAI Codex, X.ai API with Rust, MS SQL and .NET Partner Admin, LibreOffice,
-Microsoft Azure Postgres, AWS Hosting, SharePoint Intranet Setup, Cloudflare CDN,
+Claude CLI and OpenAI Codex, X.ai API with Rust, MS SQL and .NET Partner Admin, LibreOffice,
+Microsoft Azure Postgres, AWS Hosting, SharePoint Intranet Setup, Cloudflare CDN, Firebase,
 Google Cloud Platform, GitHub Pages, MailChimp, Mailtrap, ChatGPT API, MS Office/Copilot,
 DNS Management, Google Analytics, Apache eCharts, ChartJS and D3 Data Visualizations,
-Cognito Forms, Wix, Squarespace, Drupal, WordPress, Zapier, Jira, Trello, Basecamp
+Cognito Forms, Wix, Squarespace, Drupal, WordPress, Zapier, Jira, Trello, Salesforce, Basecamp
 
 ### Programming / Development Tools
 

@@ -6,7 +6,7 @@ loren@dreamstudio.com | 678-468-1000 | Atlanta, GA
 Work Experience
 
 Lead Developer / Programmer Analyst
-Georgia.org Dept of Economic Development - Atlanta, GA
+Georgia Department of Economic Development - Atlanta, GA
 2015 - Present
 
 Founder and CEO
@@ -14,10 +14,10 @@ DreamStudio.com - Atlanta, GA
 2000 - Present
 
 Project Director / Lead Engineer
-Model.earth - Atlanta, GA
+Model.Earth - Atlanta, GA
 2020 - Present
 
-Site Parks Website Developer
+State Parks Website Developer
 Georgia State Parks and Historic Sites - Atlanta, GA
 2000 to 2015
 
@@ -41,9 +41,9 @@ Telecommunications
 4.0 GPA (4 semesters)
 Emphasis: UX Design, Comm Tech Lab, MITN Satellite Network, Internet Guide. 1.5 years toward master's
 
-University of California Santa Barbara
+University of California-Santa Barbara
 Bachelor's Degrees
-BA Business Economics
+Business Economics
 3.4 GPA
 
 ---
@@ -55,10 +55,16 @@ Computer Programming, User Experience (UX), Structured Query Language (SQL), Hyp
 Business Solutions / Platforms
 
 Claude and OpenAI Codex, X.ai API with Rust, MS SQL and .NET Partner Admin, LibreOffice,
-Microsoft Azure Postgres, AWS Hosting, SharePoint Intranet Setup, Cloudflare CDN,
+Cloudflare CDN, Microsoft Azure Postgres, AWS Hosting, SharePoint Intranet Setup, Salesforce Admin,
 Google Cloud Platform, GitHub Pages, MailChimp, Mailtrap, ChatGPT API, MS Office/Copilot,
 DNS Management, Google Analytics, Apache eCharts, ChartJS and D3 Data Visualizations,
 Cognito Forms, Wix, Squarespace, Drupal, WordPress, Zapier, Jira, Trello, Basecamp
+
+Claude CLI and OpenAI Codex, X.ai API with Rust, MS SQL and .NET Partner Admin, LibreOffice,
+Microsoft Azure Postgres, AWS Hosting, SharePoint Intranet Setup, Cloudflare CDN, Firebase,
+Google Cloud Platform, GitHub Pages, MailChimp, Mailtrap, ChatGPT API, MS Office/Copilot,
+DNS Management, Google Analytics, Apache eCharts, ChartJS and D3 Data Visualizations,
+Cognito Forms, Wix, Squarespace, Drupal, WordPress, Zapier, Jira, Trello, Salesforce, Basecamp
 
 Programming / Development Tools
 
