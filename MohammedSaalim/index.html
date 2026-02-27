@@ -610,6 +610,9 @@
                 }
             }
 
+            // Capture original URL params BEFORE CVFilters.init modifies the URL
+            var userRequestedResume = new URLSearchParams(location.search).has('resume');
+
             // Initialize filters immediately (populates cvFiltersContainer)
             CVFilters.init({
                 personFolder: 'MohammedSaalim',
@@ -624,7 +627,6 @@
                 var mainContent = document.getElementById('main-content');
                 if (!mainContent) return;
 
-                var highlights = document.getElementById('highlightsContent');
                 var resume = document.getElementById('resumeContent');
                 var container = document.getElementById('cvFiltersContainer');
 
@@ -636,8 +638,8 @@
                     mainContent.appendChild(container);
                 }
 
-                // Apply tab from URL
-                if (new URLSearchParams(location.search).has('resume')) {
+                // Only auto-switch if user explicitly navigated with ?resume=
+                if (userRequestedResume) {
                     showTab('resume');
                 }
             }
