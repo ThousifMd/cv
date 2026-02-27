@@ -1,0 +1,81 @@
+Loren Kevin Heyns
+loren@dreamstudio.com | 678-468-1000 | Atlanta, GA
+
+---
+
+Work Experience
+
+Programmer Analyst / Web App Developer
+Georgia Department of Economic Development - Atlanta, GA
+2015 - Present
+
+Project Director / Lead Engineer
+Model.Earth - Atlanta, GA
+2020 - Present
+
+Founder and CEO
+DreamStudio.com - Atlanta, GA
+2000 - Present
+
+State Parks Website Developer
+Georgia State Parks and Historic Sites - Atlanta, GA
+2000 to 2015
+
+Lead Programmer and Web Designer
+Interactive Planet / Southern Company - Atlanta, GA
+1995 to 2000
+
+---
+
+Education
+
+Georgia Institute of Technology
+Doctorate Degree (2 semesters)
+Computer Science CSE
+4.0 GPA
+Emphasis: Software engineering, energy impacts, data visualization, multi-model transit, infrastructure, aerospace, construction apps, SQL, Python machine learning models, JQuery, 3D design.  2 semesters toward PhD
+
+Michigan State University
+Master's Degree (1.5 years toward master's)
+Telecommunications
+4.0 GPA
+Emphasis: UX Design, Comm Tech Lab, MITN Satellite Network, Internet Guide.
+
+University of California-Santa Barbara
+Bachelor's Degrees
+Business Economics
+3.4 GPA
+
+---
+
+Skills
+
+Computer Programming, User Experience (UX), Structured Query Language (SQL), Hyper Text Markup Language (HTML), Cascading Style Sheets (CSS), Artificial Intelligence (AI), Data Science, Microsoft .NET, JavaScript, Natural Language, Python (Programming Language), Sustainable Energy Labels, Microsoft Office, Machine Learning (ML)
+
+Business Solutions / Platforms
+
+Claude and OpenAI Codex, X.ai API with Rust, MS SQL and .NET Partner Admin, LibreOffice,
+Cloudflare CDN, Microsoft Azure Postgres, AWS Hosting, SharePoint Intranet Setup, Salesforce Admin,
+Google Cloud Platform, GitHub Pages, MailChimp, Mailtrap, ChatGPT API, MS Office/Copilot,
+DNS Management, Google Analytics, Apache eCharts, ChartJS and D3 Data Visualizations,
+Cognito Forms, Wix, Squarespace, Drupal, WordPress, Zapier, Jira, Trello, Basecamp
+
+Claude CLI and OpenAI Codex, X.ai API with Rust, MS SQL and .NET Partner Admin, LibreOffice,
+Microsoft Azure Postgres, AWS Hosting, SharePoint Intranet Setup, Cloudflare CDN, Firebase,
+Google Cloud Platform, GitHub Pages, MailChimp, Mailtrap, ChatGPT API, MS Office/Copilot,
+DNS Management, Google Analytics, Apache eCharts, ChartJS and D3 Data Visualizations,
+Cognito Forms, Wix, Squarespace, Drupal, WordPress, Zapier, Jira, Trello, Salesforce, Basecamp
+
+Programming / Development Tools
+
+JAM Stack with Sublime Text, VS Code, Cursor, Firebase Studio, WebStorm, YAML, JSON APIs
+JavaScript, jQuery, Leaflet, MapBox, React, NodeJS, NextJS, CartoDB, DuckDB, CSS3, HTML5
+Python, Flask, PyTorch, NLP, XGBoost and Random Forest ML, Streamlit, Vite, Bun, DBeaver
+C# .NET Core, IIS Admin, Microsoft SQL, Supabase, DuckDB, MariaDB, PostgreSQL, SQLite
+
+Generative AI and UX Design Tools
+
+Chat Interface design for X.ai API, Vercel and Langchain interfaces, Claude Code CLI, 
+AI video generation with X.ai API, Runway, Luma Dream Machine, Pika, CapCut, ComfyUI, FloraFauna,
+AI image generation with Midjourney, Gemini API, Stable Diffusion, Grok, Meta, GetImg, Leonardo,
+Hugging Face, Voyage AI, Pinecone, Adobe InDesign, Firefly, Photoshop, Illustrator, SketchUp
