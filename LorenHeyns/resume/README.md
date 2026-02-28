@@ -85,7 +85,7 @@ Georgia Tech – Network Dynamics Lab – Atlanta, GA
 
 ## Programming and UX Design
 
-- Languages: JavaScript, jQuery, Python, Rust, C\# .NET, HTML5, CSS3
+- Languages: JavaScript, jQuery, Python, Rust, React, NextJS, C\# .NET, HTML5, CSS3
 - Mapping &amp; Data: Leaflet Maps, Google Data Commons API, CartoDB, D3 data visualizations
 - Databases &amp; Servers: MS SQL, PostgreSQL, MySQL, IIS, Flask, Rust
 - Tools: Sublime Text, WebStorm, VS Code, Cloudflare, GitHub, JAM Stack
@@ -102,7 +102,6 @@ Georgia Tech – Network Dynamics Lab – Atlanta, GA
 ## Business Platforms
 
 - AWS, Google Cloud, Salesforce Admin, Sharepoint Admin, Azure PostgreSQL
-- Wix, Squarespace, Jira, Trello, WordPress, Drupal, [Vibe coded Github Projects Hub](../../../projects/)
-- Cognito Forms, Zapier, Microsoft Power BI, Tableau, GitHub Hosting with Cloudflare
-
+- GitHub Hosting with Cloudflare, Cognito Forms, Microsoft Power BI, Tableau, Zapier
+- Wix, Squarespace, Jira, Trello, WordPress, Drupal, [Vibe coded Github Projects Hub and more!](../../../projects/)
 
