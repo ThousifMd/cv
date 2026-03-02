@@ -11,11 +11,12 @@ AI Integration Expert, Full Stack Developer, Python Machine Learning Analytics, 
 **Project Director / Lead Engineer**
 Model.Earth – Atlanta, GA
 2020 – Present
-- [Lead Engineer](https://dreamstudio.com/loren/) for volunteer data science teams using Rust and Python to analyze supply-chains for product analysis and industry impact comparisons.
-- [AI Agent APIs](https://dreamstudio.com/requests/engine/rust-api/src/providers/) Art Engine for prompt driven storyboard development using Claude Code CLI, OpenAI Codex and xAI Grok Video generation.
-- [International trade analysis](https://model.earth/profile/trade/) combining Python Colabs, Azure SQL, Tabulator, Chart.js, D3 and Leaflet Maps. Cloudflare and AWS&nbsp;hosting. 
+- [Lead Engineer](https://dreamstudio.com/loren/) for volunteer data science teams using Rust and Python to analyze supply-chains for product analysis and industry impact comparisons
+- [AI Agent APIs](https://dreamstudio.com/requests/engine/rust-api/src/providers/) for prompt driven storyboard development using Claude Code CLI, OpenAI Codex, Google Gemini and xAI Grok video generation
+- [International trade analysis](https://model.earth/profile/trade/) combining Python Colabs, Azure SQL, Tabulator, Chart.js, D3 and Leaflet Maps. Cloudflare and AWS&nbsp;hosting
 - [Arts Engine for video](https://dreamstudio.com/requests/engine/) generation, LLM chat interfaces, Python Data Pipelines, RealityStream ML Forecasting
-- [UN Goal Timelines](https://model.earth/localsite/timeline/) using Google Data Commons and FeedPlayer API lists in our [Tools for Teaching](https://dreamstudio.com/projects/about/teaching/) and [Environmental Impact Research](https://model.earth/io/learn/).
+- [UN Goal Timelines](https://model.earth/localsite/timeline/) combining Google Data Commons with our RealityStream ML and FeedPlayer API lists
+- [Tools for Teaching](https://dreamstudio.com/projects/about/teaching/) and [Environmental Impact Research](https://model.earth/io/learn/)
 
 
 **Lead Developer / Programmer Analyst / Project Lead**
