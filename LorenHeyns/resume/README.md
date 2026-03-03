@@ -1,21 +1,18 @@
 # Loren Heyns
 Atlanta, GA 30315 · 678-468-1000 · loren@dreamstudio.com
 
-## Summary
-
 AI Integration Expert, Full Stack Developer, Python Machine Learning Analytics, Vibe Code Trainer, Technical Project Manager. Awesome UX/UI designer with 25 years experience building data‑driven web applications with JavaScript, jQuery, SQL, AWS and Google Cloud Hosting with robust maps and beutiful data visualizations. 
 
 ## Work Experience
-
 
 **Project Director / Lead Engineer**
 Model.Earth – Atlanta, GA
 2020 – Present
 - [Lead Engineer](https://dreamstudio.com/loren/) for volunteer data science teams using Rust and Python to analyze supply-chains for product analysis and industry impact comparisons
 - [AI Agent APIs](https://dreamstudio.com/requests/engine/rust-api/src/providers/) for prompt driven storyboard development using Claude Code CLI, OpenAI Codex, Google Gemini and xAI Grok video generation
-- [International trade analysis](https://model.earth/profile/trade/) combining Python Colabs, Azure SQL, Tabulator, Chart.js, D3 and Leaflet Maps. Cloudflare and AWS&nbsp;hosting
-- [Arts Engine for video](https://dreamstudio.com/requests/engine/) generation, LLM chat interfaces, Python Data Pipelines, RealityStream ML Forecasting
-- [UN Goal Timelines](https://model.earth/localsite/timeline/) combining Google Data Commons with our RealityStream ML and FeedPlayer API lists
+- [International trade analysis](https://model.earth/profile/trade/) combining Python Colabs, Azure SQL, Tabulator, Chart.js and Leaflet Maps
+- [Arts Engine for video](https://dreamstudio.com/requests/engine/) generation, LLM chat interfaces, Python data pipelines and PostgreSQL databases
+- [UN Goal Timelines](https://model.earth/localsite/timeline/) combining Google Data Commons with  RealityStream ML forecasting
 - [Tools for Teaching](https://dreamstudio.com/projects/about/teaching/) and [Environmental Impact Research](https://model.earth/io/learn/)
 
 
@@ -69,24 +66,27 @@ Georgia Tech – Network Dynamics Lab – Atlanta, GA
 - Supported research on multimodal transportation, construction applications, and mixed‑reality apps for HoloLens.
 - Built D3‑based visual analytics and mapping for machine learning–driven community trend forecasting.
 
----
+<br>
 
-## Education
+<div class="pagebreak"></div>
 
-**Georgia Institute of Technology** – Atlanta, GA
-2018 – 2019
+# Education
 
-- Coursework, 2 semesters): Data and Visual Analytics, Network Dynamics Lab, Urban Planning, Smart Cities, BIM Construction Apps, Mobility Infrastructure. - [research overview](http://dreamstudio.com/research/)
+**Georgia Institute of Technology** – Atlanta, GA – 2018 to 2019
 
-**Michigan State University**
+- Coursework during 2 semesters toward PhD: Machine Learning and Visual Data Analytics, Network Dynamics Lab storm impact study, Urban Planning, Smart Cities, BIM Construction Apps, Mobility Infrastructure. - [CV](http://dreamstudio.com/research/)
+
+**Michigan State University** – Lansing, MI – 1993 to 1994
 
 - Telecommunications: UX Design, CommTech Lab, MITN Satellite Distance Learning Network (1.5 years toward Master's) 
 
-**University of California, Santa Barbara**
+**University of California UCSB** – Santa Barbara, CA - 1986 to 1991
 
 - Two bachelor's degrees: Business Economics and Communication Studies, Financial Accounting, Programming, Environmental Economics, Screenwriting, Photography.
 
----
+<br>
+
+# Skills
 
 ## Programming and UX Design
 
@@ -108,5 +108,5 @@ Georgia Tech – Network Dynamics Lab – Atlanta, GA
 
 - AWS, Google Cloud, Salesforce Admin, Sharepoint Admin, Azure PostgreSQL
 - GitHub Hosting with Cloudflare, Cognito Forms, Microsoft Power BI, Tableau, Zapier
-- Wix, Squarespace, Jira, Trello, WordPress, Drupal, [Vibe coded Github Projects Hub and more!](https://dreamstudio.com/projects/)
+- Wix, Squarespace, Jira, Trello, WordPress, Drupal, [Vibe coded our own Github Projects Hub and more!](https://dreamstudio.com/projects/)
 
