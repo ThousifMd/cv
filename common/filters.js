@@ -120,6 +120,33 @@
     return null;
   }
 
+  function getJsonCandidates() {
+    return Array.from(new Set([
+      config.defaultJson,
+      'detailed.json',
+      'summary.json',
+      'resume.json',
+      'brief.json'
+    ].filter(Boolean)));
+  }
+
+  function renderJsonOptions(selectedFile) {
+    return getJsonCandidates()
+      .map((file) => `<option value="${file}"${file === selectedFile ? ' selected' : ''}>${file}</option>`)
+      .join('\n');
+  }
+
+  function ensureJsonSelectOption(file) {
+    const jsonSelect = select('#cvJsonSelect');
+    if (!jsonSelect || !file) return;
+    if (Array.from(jsonSelect.options).some((option) => option.value === file)) return;
+
+    const option = document.createElement('option');
+    option.value = file;
+    option.textContent = file;
+    jsonSelect.appendChild(option);
+  }
+
   // Generate filter HTML
   function generateFilterHTML() {
     return `
@@ -282,7 +309,7 @@
         <div class="cv-filters-row">
           <label>Data:</label>
           <select id="cvJsonSelect">
-            <option value="detailed.json">detailed.json</option>
+            ${renderJsonOptions(config.defaultJson)}
           </select>
 
           <label style="margin-left:12px;">Theme:</label>
@@ -725,6 +752,7 @@
     const jsonSelect = select('#cvJsonSelect');
     const themeSelect = select('#cvThemeSelect');
 
+    ensureJsonSelectOption(jsonFile);
     if (jsonSelect) jsonSelect.value = jsonFile;
     if (themeSelect) themeSelect.value = theme;
 
@@ -759,7 +787,7 @@
 
   // Probe for common JSON filenames and populate the Data dropdown
   async function autoDetectJsonFiles(currentFile) {
-    const candidates = ['detailed.json', 'summary.json', 'resume.json', 'brief.json'];
+    const candidates = getJsonCandidates();
     const jsonSelect = select('#cvJsonSelect');
     if (!jsonSelect) return;
 

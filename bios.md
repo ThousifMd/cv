@@ -3,8 +3,8 @@
 [Yash Gondkar](YashGondkar)
 [Loren Heyns](LorenHeyns)
 [Mohammed Saalim](MohammedSaalim)
-[Shanmuga Priya Kannan](ShanmugaPriyaKannan)
-[Satvik Praveen](extract)<!--
+[Shanmuga Priya Kannan](ShanmugaPriyaKannan) - Projects section
+[Satvik Praveen](extract) - JSON drop to convert<!--
 [Thanmayi Sai](ThanmayiSai)-->
 [Rekha Chimpiri](RekhaChimpiri)
 [Noor](Noor)

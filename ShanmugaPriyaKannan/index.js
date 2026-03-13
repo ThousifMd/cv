@@ -21,6 +21,16 @@
     return (v || "").toString();
   }
 
+  function renderSection(title, content) {
+    if (!content || !content.trim()) return "";
+    return `
+      <section class="section">
+        <h2 class="section-title">${title}</h2>
+        ${content}
+      </section>
+    `;
+  }
+
   function renderResume(data) {
     const b          = data.basics       || {};
     const work       = data.work         || [];
@@ -53,25 +63,17 @@
 
       <div class="layout">
         <div class="col-main">
-          <section class="section">
-            <h2 class="section-title">Summary</h2>
-            <div class="summary-text">${esc(b.summary)}</div>
-          </section>
+          ${renderSection("Summary", b.summary ? `<div class="summary-text">${esc(b.summary)}</div>` : "")}
 
-          <section class="section">
-            <h2 class="section-title">Experience</h2>
-            ${work.map(w => `
+          ${renderSection("Experience", work.map(w => `
               <div class="item">
                 <div class="item-title">${esc(w.position)}</div>
                 <div class="item-sub">${esc(w.company)}</div>
                 <div class="item-summary">${esc(w.summary)}</div>
               </div>
-            `).join("")}
-          </section>
+            `).join(""))}
 
-          <section class="section">
-            <h2 class="section-title">Projects</h2>
-            ${projects.map(p => `
+          ${renderSection("Projects", projects.map(p => `
               <div class="item pill-section">
                 <div class="item-title">${esc(p.name)}</div>
                 <div class="item-summary">${esc(p.summary)}</div>
@@ -80,48 +82,33 @@
                     ${p.keywords.map(k => `<span class="chip">${esc(k)}</span>`).join("")}
                   </div>` : ""}
               </div>
-            `).join("")}
-          </section>
+            `).join(""))}
         </div>
 
         <div class="col-side">
-          <section class="section">
-            <h2 class="section-title">Skills</h2>
-            ${skills.map(s => `
+          ${renderSection("Skills", skills.map(s => `
               <div class="item">
                 <div class="item-title">${esc(s.name)}</div>
                 <div class="chips">
                   ${(s.keywords || []).map(k => `<span class="chip">${esc(k)}</span>`).join("")}
                 </div>
               </div>
-            `).join("")}
-          </section>
+            `).join(""))}
 
-          <section class="section">
-            <h2 class="section-title">Education</h2>
-            ${edu.map(e => `
+          ${renderSection("Education", edu.map(e => `
               <div class="item">
                 <div class="item-title">${esc(e.studyType)} — ${esc(e.area)}</div>
                 <div class="item-sub">${esc(e.institution)}${e.location ? " · " + esc(e.location) : ""}</div>
               </div>
-            `).join("")}
-          </section>
+            `).join(""))}
 
-          ${certs.length ? `
-            <section class="section">
-              <h2 class="section-title">Certifications</h2>
-              ${certs.map(cer => `
-                <div class="item-sub">• ${esc(cer.name)}</div>
-              `).join("")}
-            </section>` : ""}
+          ${renderSection("Certifications", certs.map(cer => `
+            <div class="item-sub">• ${esc(cer.name)}</div>
+          `).join(""))}
 
-          ${langs.length ? `
-            <section class="section">
-              <h2 class="section-title">Languages</h2>
-              ${langs.map(l => `
-                <div class="item-sub">• ${esc(l.language)}${l.fluency ? " — " + esc(l.fluency) : ""}</div>
-              `).join("")}
-            </section>` : ""}
+          ${renderSection("Languages", langs.map(l => `
+            <div class="item-sub">• ${esc(l.language)}${l.fluency ? " — " + esc(l.fluency) : ""}</div>
+          `).join(""))}
         </div>
       </div>
     `;
