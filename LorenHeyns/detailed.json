@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Loren Kevin Heyns",
-    "label": "Project Director and Lead Engineer | AI Integration Expert",
+    "label": "Project Director and Lead AI Engineer | AI Integration Expert",
     "email": "loren@dreamstudio.com",
     "phone": "678-468-1000",
     "url": "dreamstudio.com/loren",
@@ -11,7 +11,7 @@
   "work": [
     {
       "company": "DreamStudio Model.Earth – Collaborative Data Science",
-      "position": "Lead Engineer for Data Science Teams",
+      "position": "Lead Engineer for AI Integration Teams",
       "startDate": "2020-01",
       "endDate": "2026-02",
       "summary": "• Lead Engineer for data science teams visualizing industry impact supply-chains with location comparison tools\n• LLM chat interfaces using Rust and NodeJS\n• Google Data Commons API timeline data\n• Cloudflare and AWS hosting\n• International trade flow analysis combining Python Colabs, Azure SQL, Tabulator, Chart.js, D3 and Leaflet Maps"
