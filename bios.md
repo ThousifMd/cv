@@ -58,7 +58,7 @@ Ivy is a Senior Programmer and Data Analytics Specialist with degrees in Applied
 <div class="bioText" markdown="1">
 ## Loren Heyns
 Loren is a Full-Stack Developer with 25 years experience building collaborative websites that combine data visualizations and interactive maps with fast static hosting using GitHub and Cloudflare. Loren enjoys building open frameworks and immersive data science websites combining industry data analysis, Google Data Common API timelines and LLM interfaces.
-[My Recent Work ~ Get In Touch](../loren)
+[My Recent Work ~ Get In Touch](https://dreamstudio.com/loren)
 </div>
 
 <!--
